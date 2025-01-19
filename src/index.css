@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calendar-container .fc {
+  /* FullCalendarのカスタマイズ */
+  --fc-border-color: #e5e7eb;
+  --fc-button-bg-color: #48d1cc;
+  --fc-button-border-color: #48d1cc;
+  --fc-button-hover-bg-color: #3bb3b3;
+  --fc-button-hover-border-color: #3bb3b3;
+  --fc-button-active-bg-color: #3bb3b3;
+  --fc-button-active-border-color: #3bb3b3;
+}
+
+.calendar-container .fc-button {
+  @apply shadow-sm;
+}
+
+.calendar-container .fc-toolbar-title {
+  @apply text-gray-900;
+}
+
+.calendar-container .fc-day-today {
+  background-color: #e6fffd !important;
+}
+
+.calendar-container .fc-event {
+  @apply rounded-lg shadow-sm;
+  border: none;
+}
+
+.calendar-container .fc th {
+  @apply py-3 border-gray-200;
+}
